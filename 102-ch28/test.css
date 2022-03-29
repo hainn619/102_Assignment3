@@ -1,0 +1,54 @@
+html{
+    font-size: 62.5%;
+}
+.table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font: 1.6rem;
+}
+.table tr:nth-child(even){
+background-color: lightgrey;
+}
+.table  td, .table th{
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px;
+}
+.table tr:hover{
+    background-color: green;
+    color: white;
+}
+/* mobile view */
+.flex-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flex-child{
+    background-color: gray;
+    font-size: 2rem;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+.flex-child:hover{
+    background-color: lightslategray;
+}
+/* desltop view */
+@media(min-width:768px){
+.flex-container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+}
+/*grid*/
+.gird-container{
+display: grid;
+grid-template-columns: 33.3%  33.3%  33.3%  33.3%;
+}
+.grid-child
+{
+    background-color: gray;
+    border: 1px solid black;
+}
